@@ -1,0 +1,12 @@
+const express=require('express');
+const passport=require('passport')
+const LocalStrategy =require('passport-local')
+const router =express.Router();
+var crypto = require('crypto');
+var db = require('../db');
+
+router.get('/login',(req,res,next)=>{
+    res.render('login')
+})
+
+module.exports=router;

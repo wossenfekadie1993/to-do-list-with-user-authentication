@@ -6,8 +6,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var session=require("express-session")
-var SQLiteStore = require('connect-sqlite3')(session)
-var passport =require("passport")
+var sqlLite=require("sqlite3")(session)
+
 var indexRouter = require('./routes/index');
 var authRouter = require('./routes/auth')
 var app = express();
